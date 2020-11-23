@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+.full-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+z-index:10;
+display:flex;
+justify-content:center;
+align-items:center;
+
+p{
+color:green;
+margin:5px;
+cursor:pointer;
+}
+p:hover{
+background:yellow;
+}
+
+</style>
+</head>
+
+<body> 
+
+<p>商品說明</p>
+
+#<div class="product" align=center>
+<div class="full-screen">
+<h1>毛怪說哈嘍</h1>
+<img src="001.jpg">
+</div>
+<script>
+$("p").click(function(){
+            $(".full-screen").slideToggle();
+});
+$("img").click(function(){
+            $(".full-screen").slideToggle();
+});
+</script>
+
+</body>
+</html>
